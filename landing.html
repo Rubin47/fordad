@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrimony Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Matrimony Website</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="landing">
+            <div class="container">
+                <h2>Welcome!</h2>
+                <p>Please select an option:</p>
+                <div class="options">
+                    <button class="signup-btn" onclick="redirectToSignUp()">Sign Up</button>
+                    <button class="login-btn" onclick="redirectToLogin()">Login</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matrimony Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function redirectToSignUp() {
+            window.location.href = 'signup.html';
+        }
+
+        function redirectToLogin() {
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>
